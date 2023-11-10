@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search + Highlight</title>
+    <script src="script.js" defer></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to right, rgb(4, 4, 35) 50%, #fff 50%);
+            display: flex;
+        }
+
+        div.container{
+            position: relative;
+            margin: auto;
+            border-radius: 15px;
+            width: 750px;
+            height: auto;
+            box-shadow: 1rem 1rem 2rem rgba(4, 4, 35, 0.148);
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 3rem;
+        }
+
+        div.search-box{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        div.search-box input[type="text"]{
+            border-radius: 5px;
+            width: 65%;
+            border: 3px solid rgb(4, 4, 35);
+            padding: 1rem;
+        }
+
+        div.search-box input[type="text"]::placeholder, p{
+            color: rgb(4, 4, 35);
+        }
+
+        div.search-box input[type="text"]:focus{
+            outline: 3px solid rgb(4, 4, 35);
+            outline-offset: 5px;
+        }
+
+        div.search-box input[type="button"]{
+            border-radius: 5px;
+            width: 25%;
+            background-color: rgb(4, 4, 35);
+            padding: 1rem;
+            color: #fff;
+            border: 0;
+            cursor: pointer;
+        }
+
+        p{
+            font-size: 1.5rem;
+            text-align: justify;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span id="matches">Matches:</span>
+        <div class="search-box">
+            <input id="txt-search" type="text" name="" id="" placeholder="Enter text"> 
+        <input id="btn-search" type="button" value="Search">
+        </div>
+        <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed reiciendis excepturi id, officiis
+            inventore cum a eius ullam alias amet ipsum vel. Dignissimos ex laborum veniam deleniti est! Culpa, sit
+            fugit deserunt consequatur architecto reprehenderit, assumenda fugiat distinctio quae saepe ipsa rem
+            sapiente excepturi quas? Veritatis placeat temporibus sequi voluptates? Similique expedita debitis, fugit
+            tempore hic cumque mollitia id inventore nostrum voluptatum modi tempora incidunt natus sunt molestiae!
+            Aliquam nisi recusandae incidunt excepturi vitae aliquid optio molestiae tempora quisquam delectus sapiente
+            quia sint alias, nam ad deserunt mollitia perferendis. Expedita obcaecati assumenda maxime at illum, ipsa
+            animi sit repudiandae.
+        </p>
+       
+    </div>
+</body>
+
+</html>
+
+<!-- https://www.youtube.com/watch?v=cT7gyaEmGT4&ab_channel=CodingArtist -->
